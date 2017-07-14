@@ -14,9 +14,7 @@ describe('HeaderComponent', () => {
   it('should have the title Servicer', async(() => {
     const fixture = TestBed.createComponent(HeaderComponent);
     const headerComponent = fixture.debugElement.componentInstance;
-
-    expect(headerComponent.title).toEqual("Servicer");
-    
+    expect(headerComponent.title).toEqual("Servicer");    
   }));
 
 });

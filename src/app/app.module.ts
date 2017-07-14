@@ -3,16 +3,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent, HeaderComponent } from './components/';
+import { AppComponent } from './components/app/app.component';
+import { appComponents } from './components/';
+import { appRouteModule } from './router/router';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent
+    appComponents
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    appRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
