@@ -19,7 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "./scss/common.scss"
+        "./scss/common.scss",
+        "../node_modules/framework7/dist/css/framework7.css",
+        "../node_modules/framework7/dist/css/framework7.material.css",
+        "../node_modules/framework7/dist/css/framework7.material.colors.css",
+        "../node_modules/framework7-icons/css/framework7-icons.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -52,7 +56,6 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {
-    }
+    "component": {}
   }
 }

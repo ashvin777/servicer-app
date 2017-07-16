@@ -1,18 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { PageBodyComponent } from './page-body.component';
 
-describe('HeaderComponent', () => {
+describe('PageBodyComponent', () => {
   beforeEach(async(() => {
       TestBed.configureTestingModule({
       declarations: [
-        HeaderComponent
+        PageBodyComponent
       ],
     }).compileComponents();
   }));
 
   it('should have the title Servicer', async(() => {
-    const fixture = TestBed.createComponent(HeaderComponent);
+    const fixture = TestBed.createComponent(PageBodyComponent);
     const headerComponent = fixture.debugElement.componentInstance;
     expect(headerComponent.title).toEqual("Servicer");    
   }));

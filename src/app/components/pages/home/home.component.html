@@ -1,1 +1,37 @@
-This is the home page
+<page [dataPage]="dataPage" class="page-home">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a routerLink='/home' class="open-panel link icon-only">
+          <i class="f7-icons">settings_fill</i>
+        </a>
+      </div>
+      <div class="center">Servicer</div>
+      <!--<div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>-->
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card">
+      <div class="card-header row">
+        <div class="col-10">
+          <select>
+            <option>GET</option>
+            <option>POST</option>
+          </select>
+        </div>
+        <div class="col-80">
+          <input type="text" />
+        </div>
+        <div class="col-10">
+          <button (click)="sendRequest()">
+            SEND <i class="f7-icons">play_fill</i>
+          </button>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-content-inner">Card content</div>
+      </div>
+      <div class="card-footer">Footer</div>
+    </div>
+  </div>
+</page>

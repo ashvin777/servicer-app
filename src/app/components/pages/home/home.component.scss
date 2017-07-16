@@ -1,0 +1,39 @@
+$NavbarBg: #f5f4f4;
+$NavbarColor: black;
+.page-home {
+  .navbar {
+    background: $NavbarBg;
+    box-shadow: none;
+    color: $NavbarColor;
+    .navbar-inner {
+      .left {
+        a {
+          color: $NavbarColor;
+        }
+      }
+    }
+  }
+  .page-content {
+    select,
+    input,
+    button {
+      appearance: none;
+      border: 0px;
+      width: 100%;
+      background: $NavbarBg;
+      line-height: 32px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px #dadada;
+      font-size: 16px;
+      position: relative;
+      i{
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        line-height: 32px;
+      }
+    }
+  }
+}

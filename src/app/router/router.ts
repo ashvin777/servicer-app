@@ -1,19 +1,23 @@
 import { RouterModule, Routes } from '@angular/router';
 import { LoginPageComponent } from '../components/pages/login/login.component';
-
+import { HomePageComponent } from '../components/pages/home/home.component';
 const appRoutes: Routes = [
     {
         path: '',
-        redirectTo: '/login',
+        redirectTo: '/home',
         pathMatch: 'full'
     },
     {
         path: 'login',
         component: LoginPageComponent
+    },
+    {
+        path: 'home',
+        component: HomePageComponent
     }
 ];
 
-export const appRouteModule = RouterModule.forRoot(
+export const AppRouteModule = RouterModule.forRoot(
     appRoutes,
-    { enableTracing: true } // <-- debugging purposes only
+    { enableTracing: false, useHash: true } // <-- debugging purposes only
 );
